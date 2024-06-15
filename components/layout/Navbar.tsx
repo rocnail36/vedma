@@ -51,7 +51,7 @@ const Navbar = () => {
       :(
         <>
         {Object.entries(cartProducts).map(([id,product]) => (
-          <CardCart product={product as CartProduct}/>
+          <CardCart key={id} product={product as CartProduct}/>
         ))}
         <div className='flex items-center flex-col mt-2'>
        <p>monto: <span className='text-green-600 text-lg'>{cartMount}</span>$</p>
