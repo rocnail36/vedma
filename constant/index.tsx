@@ -30,7 +30,7 @@ export let galeryImages = [
   export let howWork:HowWork[] = [
 
     {
-      title: "metodos de pago",
+      title: "Metodos de pago",
       titleIcons: "fa-dollar-sign",
       items: [
          {type:"icon", src: "fa-money-bill-wave", text: "efectivo"},
@@ -38,10 +38,10 @@ export let galeryImages = [
          {type:"icon-image",src: "/paypal.png",text: "paypal", size:[80,80]},
          {type: "icon-image",src: "/reserve.png",text: "reserve",size:[40,40]}
         ],
-      info: "paypal 10% + de comision"
+      info: "Paypal 10% + de comision"
     },
     {
-      title: "delivery",
+      title: "Delivery",
       titleIcons: "fa-motorcycle",
       items:[
         {type:"icon",src:"fa-calendar-days", text: "lunes-viernes"},
@@ -49,7 +49,7 @@ export let galeryImages = [
       ]
     },
     {
-      title: "envios a nivel nacional",
+      title: "Envios a nivel nacional",
       titleIcons: "fa-truck-fast",
       items: [
         {type: "icon-image", src: "/tealcal.png" ,size:[80,50]},

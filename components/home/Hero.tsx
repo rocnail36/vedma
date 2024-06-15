@@ -33,7 +33,7 @@ const Hero = () => {
         />
       </div>
         <p className="animate-fromLeft text-neutral-600 max-w-[300px] leading-2 text-[1rem] md:text-[1.2rem] md:max-w-[70%] lg:text-[1.1rem] lg:leading-10">
-          tenemos los lentes de sol que necesitas para cuidar tu vision y lucir
+          Tenemos los lentes de sol que necesitas para cuidar tu vision y lucir
           increible. Ya sea que busques un look clasico, moderno, deportivo o
           elegante, tenemos lentes de sol perfectos para ti
         </p>

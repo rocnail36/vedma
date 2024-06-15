@@ -26,7 +26,7 @@ const Galery = () => {
         ))}
       </div>
 
-      <p className="mt-12 text-red-200 text-center text-[2rem]  lg:text-[2.5rem]">
+      <p className="mt-12 text-red-200 text-center text-[2rem] uppercase  lg:text-[2.5rem]">
         mejoran tu vibra y apariencia
       </p>
 
