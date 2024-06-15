@@ -9,9 +9,9 @@ export const How = () => {
   return (
    <section  className={`${roboto.className} bg-how clip max-w-screen-xl m-auto  py-12`}>
 
-    <h2 className="uppercase text-[2rem] mb-16 font-bold bg-red-700 text-white inline-block py-2 px-4">como trabajamos</h2>
+    <h2 className="uppercase text-[1.5rem] mb-16 font-bold bg-red-700 text-white inline-block py-2 px-4">como trabajamos</h2>
 
-    <div className='grid grid-cols-3 gap-8 px-8'>
+    <div className='grid justify-center gap-8 px-8 max-[340px]:px-0 md:grid-cols-3 md:px-2 md:gap-2'>
 
       
     {howWork.map(how => (

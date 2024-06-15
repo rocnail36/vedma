@@ -20,9 +20,10 @@ export interface ItemCard  {
 export let galeryImages = [
     {image: '/galery-1.jpg'},
     {image: '/galery-2.jpg'},
-    {image: '/galery-3.jpg', className:"row-span-2"},
-    {image: '/galery-4.jpg' },
-    {image: '/galery-5.jpg'}
+    {image: '/galery-3.jpg'},
+    {image: '/galery-4.jpg'},
+    {image: '/galery-5.jpg'},
+    {image: '/galery-6.jpg'}
   ];
   
 

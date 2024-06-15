@@ -1,9 +1,14 @@
 export interface Product {
-    id:string,
+    id:number,
     title:string,
-    description:string
+    description:string,
+    img:string
 }
 
 export interface Products {
  [Key:string]: Product
+}
+
+export interface CartProduct extends Product {
+    quantity: number
 }

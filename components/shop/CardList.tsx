@@ -9,9 +9,9 @@ interface Props {
 
 const CardList = ({products}:Props) => {
   return (
-    <div className='grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]'>
+    <div className='grid justify-center  gap-4 grid-cols-[repeat(auto-fit,minmax(250px,300px))] min-h-[70vh]  p-4'>
         {products.map(product => {
-            return <CardProduct/>
+            return <CardProduct product={product}/>
         })}
     </div>
   )

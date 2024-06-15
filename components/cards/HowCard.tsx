@@ -15,7 +15,7 @@ export const HowCard = (data:HowWork) => {
 
     const {items,title,titleIcons,info} = data
   return (
-    <Card className="bg-white text-black border-none shadow-black shadow-sm">
+    <Card className="bg-white max-w-[350px] text-black border-none shadow-black shadow-sm">
   <CardHeader>
     <CardTitle className="text-center">
       <div className='w-[80px] mb-4 h-[80px] border-8 border-red-600 m-auto flex justify-center items-center rounded-[50%]'>

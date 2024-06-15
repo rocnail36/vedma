@@ -13,12 +13,12 @@ const GaleryCard = ({ image, className }: Props): React.ReactElement => {
     <Card
       className={`overflow-hidden border-none rounded-sm ${className ?  "row-span-2" : ""}`}
     >
-      <CardContent className="relative h-full">
+      <CardContent className="relative h-[300px] w-[250px]">
         <Image
           src={image}
           fill
           alt="galery-image"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover"}}
           sizes="30vw"
         />
       </CardContent>
