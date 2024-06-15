@@ -12,7 +12,7 @@ const  Shop = async ({searchParams}:{
   }
 }) => {
 
-let nameProduct = searchParams.name ? `${searchParams.name[0].toUpperCase + searchParams.name.slice(1)}` : ""
+let nameProduct = searchParams.name ?? ''
 let page = searchParams.page ? Number(searchParams.page) : 1
 const numberOfProducts = 9
 let startIndex = page * numberOfProducts - numberOfProducts
@@ -20,9 +20,8 @@ let finalIndex = page * numberOfProducts
 const products = await getProducts("https://sheets.googleapis.com/v4/spreadsheets/10sOnHEoRdLrukcpTbT10M8JeOEAUXJMhcsYgIvTl2i4/values/sheet1?alt=json&key=AIzaSyCQZWSatvg7FiHlPQo34JPbuXuPWRAU4Vw")
 
 let filterProducts = nameProduct ? 
-products.filter(product => product.title.includes(nameProduct))
+products.filter(product => product.title.toLowerCase().includes(nameProduct.toLowerCase()))
 :products
-
 let productsToShow = filterProducts.slice(startIndex,finalIndex) 
 
   return (
