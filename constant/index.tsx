@@ -35,8 +35,8 @@ export let galeryImages = [
       items: [
          {type:"icon", src: "fa-money-bill-wave", text: "efectivo"},
          {type:"icon", src: "fa-mobile-screen-button", text: "pago movil"},
-         {type:"icon-image",src: "/paypal.png",text: "paypal", size:[80,80]},
-         {type: "icon-image",src: "/reserve.png",text: "reserve",size:[40,40]}
+         {type:"icon-image",src: "/paypal.png",text: "paypal", size:[60,60]},
+         {type: "icon-image",src: "/reserve.png",text: "reserve",size:[30,30]}
         ],
       info: "Paypal 10% + de comision"
     },
@@ -52,9 +52,9 @@ export let galeryImages = [
       title: "Envios a nivel nacional",
       titleIcons: "fa-truck-fast",
       items: [
-        {type: "icon-image", src: "/tealcal.png" ,size:[80,50]},
-        {type:"icon-image",src: "/mrw.png",size:[150,50]},
-        {type:"icon-image", src: "/zoom.png", size:[180,50]}
+        {type: "icon-image", src: "/tealcal.png" ,size:[60,50]},
+        {type:"icon-image",src: "/mrw.png",size:[100,35]},
+        {type:"icon-image", src: "/zoom.png", size:[100,40]}
       ],
     }
 

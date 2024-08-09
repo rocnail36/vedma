@@ -5,8 +5,8 @@ import React from 'react'
 
 const StylesText = () => {
   return (
-    <div className='w-[100%] flex flex-col items-center justify-center md:items-start px-4 md:w-[50%] lg:w-[40%]'>
-        <div className="max-w-[310px] min-w-[310px] min-[500px]:min-w-[450px]   md:min-w-[450px]  lg:min-w-[500px]">
+    <div className='min-h-[400px] w-[100%] max-w-[400px] m-auto md:w-[50%] lg:min-h-[800px] lg:w-[40%] lg:max-w-[450px] flex flex-col justify-center items-center md:items-start'>
+        <div className="max-w-[310px] min-w-[310px] min-[500px]:min-w-[450px]   md:min-w-[450px]  lg:min-w-[350px]">
       
       <Motion
         initial={{ width: 0 }}
@@ -15,7 +15,7 @@ const StylesText = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="overflow-hidden"
       >
-        <p className="font-semibold font-play text-[36px]  min-w-[310px] mb-14 text-center  min-[500px]:min-w-[450px]  md:text-[46px]   md:text-left lg:text-[56px] lg:min-w-[500px]">
+        <p className="font-semibold font-play text-[36px]  min-w-[310px] mb-14 text-center  min-[500px]:min-w-[450px]  md:text-[46px]   md:text-left lg:text-[56px] lg:min-w-[350px]">
         Variedad de lentes, estilos y colores unicos
         </p>
       </Motion>

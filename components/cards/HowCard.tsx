@@ -56,8 +56,8 @@ const FontIcon = ({src,text}:ItemCard) => {
 
     return (
         <li className='grid grid-cols-3 justify-items-center items-center'>
-        <i className={`fa-solid ${src} text-[2rem]`}></i>
-        <p className='text-[1.5rem] col-span-2 justify-self-start  font-semibold'>{text}</p>
+        <i className={`fa-solid ${src} text-[1.6rem]`}></i>
+        <p className='text-[1rem] col-span-2 justify-self-start  font-semibold'>{text}</p>
         </li>
     )
 
@@ -68,7 +68,7 @@ const ImageIcon = ({src,text,size}:ItemCard) => {
     return (
         <li className={`grid grid-cols-3 ${!text ? "mb-4": ""} justify-items-center items-center`}>
         <Image src={src} className={`${!text ? "col-start-2": ""} grayscale saturate-100 contrast-200`} width={size![0]} height={size![1]} alt={text!} />
-          {text &&  <p className='text-[1.5rem] col-span-2 justify-self-start font-semibold'>{text}</p>}
+          {text &&  <p className='text-[1rem] col-span-2 justify-self-start font-semibold'>{text}</p>}
         </li>
     )
 }

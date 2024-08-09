@@ -4,7 +4,7 @@ import StylesText from './StylesText'
 
 const Styles = () => {
   return (
-    <div className='max-h-[1000px] flex flex-col gap-8 md:flex-row-reverse '>
+    <div className=' flex flex-col gap-8 md:flex-row-reverse items-center lg:w-[80vw] mb-16 lg:m-auto lg:mb-32'>
         <StylesGlass/>
         <StylesText/>
     </div>

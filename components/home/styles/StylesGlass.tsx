@@ -4,14 +4,14 @@ import React from 'react'
 
 const StylesGlass = () => {
   return (
-    <div className='relative min-h-[600px] w-[100%] max-w-[400px] m-auto md:w-[50%] lg:min-h-[800px] lg:w-[60%] lg:max-w-[450px]'>
+    <div className='relative min-h-[600px] w-[100%] max-w-[400px] m-auto md:w-[50%] lg:min-h-[800px] lg:w-[40%] lg:max-w-[450px] lg:min-w-[500px]'>
 
       
       <Motion initial={{y:100}} whileInView={{y:0}} transition={{duration:0.5}} viewport={{once:true}} className="rounded-[50%] h-[170px] w-[170px] bg-circle absolute top-10 left-4 z-10" />
 
       <Motion initial={{y:100}} whileInView={{y:0}} transition={{duration:0.5}} viewport={{once:true}} className="rounded-[50%] h-[120px] w-[120px] bg-circle absolute right-4 bottom-[40%] " />
 
-      <Motion initial={{y:100}} whileInView={{y:0}} transition={{duration:0.5}} viewport={{once:true}} className="rounded-[50%] h-[80px] w-[80px] bg-circle absolute bottom-16 left-10 " />
+      <Motion initial={{y:100}} whileInView={{y:0}} transition={{duration:0.5}} viewport={{once:true}} className="rounded-[50%] h-[80px] w-[80px] bg-circle absolute bottom-24 left-10 " />
 
 
      <div className='absolute w-[150px] h-[250px] lg:h-[350px] lg:w-[250px] right-0'>

@@ -19,7 +19,7 @@ const Galery = () => {
     <p className="font-semibold font-play text-white text-[35px] text-center lg:text-[46px]">
     Lentes que transforman tu mirada.
     </p>
-    <p className="font-semibold font-play text-white text-[35px] text-center lg:text-[46px]">
+    <p className="font-semibold font-play text-white text-[35px] text-center lg:text-[38px] lg:max-w-[320px]">
     Mejoran tu vibra y apariencia.
     </p>
       </Motion>
