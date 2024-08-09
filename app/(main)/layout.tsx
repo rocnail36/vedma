@@ -12,7 +12,7 @@ const layout = ({ children }: Props) => {
   
   
   return (
-    <main className="max-w-screen-xl m-auto relative overflow-hidden">
+    <main className="m-auto">
       <Navbar />
       {children}
       <Footer/>

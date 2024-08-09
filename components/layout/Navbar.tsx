@@ -29,10 +29,10 @@ const Navbar = () => {
 
 
   return (
-    <div className='fixed bg-white w-screen max-w-screen-xl  py-2  px-8 z-50 flex justify-between shadow-md mb-6'>
+    <div className='fixed top-0 left-0 bg-white w-full h-[70px]  py-4  z-50 flex justify-between px-8 shadow-md mb-6'>
         <Link href='/' ><Image src={"/smallLogo.png"} width={120} height={20} alt='logo'/></Link>
-        <Sheet key={"left"}>
-      <SheetTrigger className="relative"><div className='rounded-[50%] bg-red-700 text-white absolute px-[10px] right-[-20px] top-[-5px]'>{numberCart}</div><i className="fa-solid fa-cart-shopping fa-xl"></i></SheetTrigger>
+        <Sheet>
+      <SheetTrigger className='relative'><div className='rounded-[50%] bg-red-700 text-white absolute px-[10px] right-[-20px] top-[-5px]'>{numberCart}</div><i className="fa-solid fa-cart-shopping fa-xl"></i></SheetTrigger>
       <SheetContent
         className="bg-white overflow-y-scroll"
         side={"right"}

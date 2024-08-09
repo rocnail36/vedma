@@ -6,7 +6,7 @@ import React from 'react'
 export const Pagination = ({productInPages,productsNumber,page}:{productInPages:number,productsNumber:number,page:number}) => {
 
     let numberOfPages =  Math.ceil(productsNumber / productInPages)
-     console.log({this:numberOfPages,productsNumber})
+    
   
      const router = useRouter()
     

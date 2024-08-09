@@ -9,7 +9,7 @@ import {
   } from "@/components/ui/card"
   import Image from 'next/image';
 import { HowWork, ItemCard } from '@/constant';
-import { roboto } from '../home/How';
+
 
 export const HowCard = (data:HowWork) => {
 
@@ -21,7 +21,7 @@ export const HowCard = (data:HowWork) => {
       <div className='w-[80px] mb-4 h-[80px] border-8 border-red-600 m-auto flex justify-center items-center rounded-[50%]'>
       <i className={`fa-solid ${titleIcons} fa-lg`}></i>
       </div>
-      <p className={`${roboto.className}`}>{title}</p>
+      <p className={`font-bold`}>{title}</p>
     </CardTitle>
   </CardHeader>
   <CardContent className=" pt-4 mb-4">
@@ -57,7 +57,7 @@ const FontIcon = ({src,text}:ItemCard) => {
     return (
         <li className='grid grid-cols-3 justify-items-center items-center'>
         <i className={`fa-solid ${src} text-[2rem]`}></i>
-        <p className='text-[1.5rem] col-span-2 justify-self-start  text-bold'>{text}</p>
+        <p className='text-[1.5rem] col-span-2 justify-self-start  font-semibold'>{text}</p>
         </li>
     )
 
@@ -68,7 +68,7 @@ const ImageIcon = ({src,text,size}:ItemCard) => {
     return (
         <li className={`grid grid-cols-3 ${!text ? "mb-4": ""} justify-items-center items-center`}>
         <Image src={src} className={`${!text ? "col-start-2": ""} grayscale saturate-100 contrast-200`} width={size![0]} height={size![1]} alt={text!} />
-          {text &&  <p className='text-[1.5rem] col-span-2 justify-self-start text-bold '>{text}</p>}
+          {text &&  <p className='text-[1.5rem] col-span-2 justify-self-start font-semibold'>{text}</p>}
         </li>
     )
 }

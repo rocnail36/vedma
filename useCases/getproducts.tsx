@@ -12,7 +12,7 @@ export const getProducts = async(url:string) => {
       description:product[2],
       img: product[3]
      }))
-
+   
    return products 
    
 } 

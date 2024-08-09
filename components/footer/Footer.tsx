@@ -7,8 +7,7 @@ const Footer = () => {
 
     
     const path = usePathname()
-    console.log(path == "/shop")
-    
+ 
   return (
     <div className={`flex p-10 justify-between items-center  ${path == "/shop" && "border-t-[1px] border-slate-200"}`}>
         <Image src="/biglogo.png" alt='logo' width={150} height={50}/>
