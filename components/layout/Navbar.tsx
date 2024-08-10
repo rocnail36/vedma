@@ -50,11 +50,12 @@ const Navbar = () => {
        
       :(
         <>
+        <h2 className='text-center font-bold text-xl'>Tu carrito</h2>
         {Object.entries(cartProducts).map(([id,product]) => (
           <CardCart key={id} product={product as CartProduct}/>
         ))}
         <div className='flex items-center flex-col mt-2'>
-       <p>monto: <span className='text-green-600 text-lg'>{cartMount}</span>$</p>
+       <p className='flex items-center gap-[1px]'>monto: <span className='text-green-600 font-bold text-[20px] '>{cartMount}</span>$</p>
         <a  href={`https://wa.me/584127411421?text=Hola deseo comprar los siguientes productos:%0A${text}`} >
         <button className='bg-red-700 text-white p-2 rounded-md hover:scale-105'>solicitar compra</button>
         </a>
