@@ -1,5 +1,6 @@
 import Motion from '@/components/framer/Motion'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 import React from 'react'
 
 const HeroText = () => {
@@ -44,9 +45,12 @@ const HeroText = () => {
         transition={{ duration: 0.3, delay: 0.2 }}
         className="overflow-hidden self-center md:self-start"
       >
+
+        <Link href={"/shop"}>
         <Button className="bg-primary text-white text-[18px] px-6 py-2 font-bold">
           Ir a la tienda
         </Button>
+        </Link>
       </Motion>
 
     </div>

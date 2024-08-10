@@ -9,7 +9,7 @@ interface Props {
 
 const CardList = ({products}:Props) => {
   return (
-    <div className='grid justify-center  gap-4 grid-cols-[repeat(auto-fit,minmax(250px,300px))] min-h-[70vh]  p-4'>
+    <div className='grid justify-center  gap-4 grid-cols-[repeat(auto-fit,minmax(250px,250px))] min-h-[70vh]  p-4'>
         {products.map(product => {
             return <CardProduct key={product.id} product={product}/>
         })}

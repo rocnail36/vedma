@@ -1,6 +1,7 @@
 import Motion from '@/components/framer/Motion'
 import { Button } from '@/components/ui/button'
 import { once } from 'events'
+import Link from 'next/link'
 import React from 'react'
 
 const StylesText = () => {
@@ -23,9 +24,11 @@ const StylesText = () => {
 
 
         <Motion initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.5}} viewport={{once:true}}>
-        <Button className="bg-primary text-white text-[18px] px-6 py-2 font-bold">
+        <Link href={"/shop"}>
+         <Button className="bg-primary text-white text-[18px] px-6 py-2 font-bold">
           ¡COMPRAR YA!
         </Button>
+        </Link>
         </Motion>
     
     </div>

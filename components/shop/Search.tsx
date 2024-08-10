@@ -23,8 +23,8 @@ export const Search = ({name}:{name:string}) => {
   }
 
   return (
-    <div className='flex justify-center items-center mb-4 '>
-     <Input className='w-1/2  outline-none ring-0 ring-transparent  mr-[-25px]  border border-gray-400' type="text" placeholder="search" 
+    <div className='flex justify-center items-center mb-4'>
+     <Input className='w-1/2  outline-none ring-0 ring-transparent mr-[-25px] border  shadow-lg focus-visible:ring-primary/30 focus-visible:ring-2 focus-visible:ring-offset-2' type="text" placeholder="search" 
      defaultValue={name}
      onChange={onChange}/>
      <i className="fa-solid fa-magnifying-glass"></i>

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Lato,Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script'
+import WrapperTransition from "@/components/framer/WrapperTransition"; 
+import PrivateAnimation from "@/components/framer/PrivateAnimation";
+
 
 const lato = Lato({
   subsets: ["latin"],
@@ -31,7 +34,11 @@ export default function RootLayout({
     <body
       className={`${lato.variable} ${play.variable} font-normal  m-auto p-0`}
     >
+ 
+     
       {children}
+      
+
        <Script  src="https://kit.fontawesome.com/3794b38fcf.js" crossOrigin="anonymous" defer />
     </body>
   </html>
